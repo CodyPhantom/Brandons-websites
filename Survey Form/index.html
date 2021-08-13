@@ -1,0 +1,115 @@
+
+<html>
+    <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    </head>
+    <body>
+    <main>
+      <header class = "header">
+      
+     <center><h1 id = "title" style = "font-weight: 400;
+       line-height: 1.2;">Here's your Survey Form </h1> </center>
+        
+    
+        <center><p id = "description"> Tell us more  about you</p></center>
+       <hr class="new1">
+        </header>
+      <form id ="survey-form">
+       <div class = "survey-input"> 
+      
+       <div class = "form-class">
+          
+            <label for = "name" id ="name-label">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required >
+         
+         
+         </div>
+         <div class = "form-class">
+           <label for="email" id="email-label">Email:</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+         </div>
+         <div class = "form-class">
+         <label for="number" id="number-label" >Age(optional):</label>
+         <input type="number" name="age" id="number" min="10" max="101" class="form-control" placeholder="Type age" required />
+         </div>
+          <div class = "form-class">
+      <label id="phone-label" for="number">Phone:</label>
+          <input type="tel" name="phone" id="phone" min="10" max="10" size="15" class="form-control" placeholder="phone no." required />
+         </div>
+         
+         <div class = "form-class">
+         <p>Which option describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">employed</option><option value="learner">unemployed</option>
+            <option value="preferNo">Prefer not to say</option><option value="other">Other</option>
+            </select>
+         </div>
+          
+         
+         <div class="form-class">
+          <p> Which is your favorite learning course?</p>
+          <select id="most-like" class="form-control" required>
+            <option disabled selected value>Select a course</option>
+            <option value="Web-development">Web Development</option>
+            <option value="Data analysis">Data Analysis</option>
+            <option value="Cyber security">Cyber Security</option>
+            <option value="App-development">App Development</option>
+            
+            <option value="Ethical hacking">Ethical Hacking</option>
+            <option value="prefer not to say">prefer not to say</option>
+            
+            </select>
+           <div class = "form-class" style = "position: relative; top: 40px;">
+    
+           <p> Got anything else to tell?</p>
+          <textarea name="comment" id="comment" style = "position: relative; top: 2px; width: 650px; height: 30px;" placeholder="Enter any comments here"></textarea> 
+             
+           </div>
+            <div class="form-class" style = "position: relative; top: 40px;">
+          <p>Would you like recommend this form to a friend?</p>
+          <label style="position:relative; top: 5px; color: green;">
+            <input type="radio" name="user-recommend" value="definitely" class="input-radio" style=" top: 20px;" checked />Definitely</label>
+         <label style="position:relative; top: 5px; color: brown;"> <input type="radio" name="user-recommend" value="maybe" class="input-radio" />Maybe</label>
+          <label style="position:relative; top: 5px; color: brown;">
+            <input type="radio" name="user-recommend" value="not-sure" class="input-radio" />Not sure</label>
+        </div>
+           
+                 <div class="form-class" style = "position: relative; top: 40px;">
+          <p>Did you like the form?</p>
+          <label style="position:relative; top: 5px; color: green;">
+            <input type="checkbox" name="user-recommend" value="Yes" class="input-radio" style=" top: 20px;" checked />Yes</label>
+         <label style="position:relative; top: 5px; color: brown;"> <input type="checkbox" name="user-recommend" value="maybe" class="input-radio" />Maybe</label>
+          <label style="position:relative; top: 5px; color: red;">
+            <input type="checkbox" name="user-recommend" value="no" class="input-radio"  />No</label>
+        </div>
+           
+           
+           <div class = "form-group">
+             <button class = "submit-button" id = "submit" type = "submit">Submit</button>
+         
+         </div>
+    
+           
+            <div class = "form-group">
+             <button class = "reset-button" id = "reset" type = "reset">Reset</button>
+           </div>
+         </div>
+     
+         
+         
+         
+         
+           
+           
+               
+     
+         
+        </div>
+     
+      </form>
+    </main>
+      </body>
+    </html>
